@@ -2,3 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* https://html-color.codes/*/
+:root {
+  --main-text-light: #fff;
+  --main-text-dark: #000;
+
+  --link-hover:#EFC737;
+  --banner-green:#47B83E;
+  --banner-yellow: #EFC737;
+  --footer-bg: #27392F;
+
+  --bg-mobil-menu:rgba(0, 0, 0, 0.85);
+}
+
+
