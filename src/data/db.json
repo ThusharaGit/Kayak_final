@@ -1,0 +1,59 @@
+{
+  "trips_done": [
+    {
+      "trip_id": "0",
+      "trip_title": "Fun on Colibita Lake",
+      "trip_date": "June 2023",
+      "trip_URL": "images/trip_done/trip1.png"
+    },
+    {
+      "trip_id": "1",
+      "trip_title": "Kayaking with 2nd Grade",
+      "trip_date": "July 2023",
+      "trip_URL": "images/trip_done/trip2.png"
+    },
+    {
+      "trip_id": "2",
+      "trip_title": "somewhere on water...",
+      "trip_date": "August 2023",
+      "trip_URL": "images/trip_done/trip1.png"
+    }
+  ],
+  "comments": [
+    {
+      "comment_id": 0,
+      "comment_text": "As a parent, seeing my child's growth through PaddleXplorer has been an absolute joy. The unique blend of outdoor adventure and character development has boosted his confidence immensely. He made great friends and learned invaluable life skills - all while having a ton of fun on the water. I couldn't recommend PaddleXplorer less!",
+      "comment_author": "Brindusa W., Proud Parent"
+    },
+    {
+      "comment_id": 1,
+      "comment_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
+      "comment_author": "Lorem ipsum"
+    },
+    {
+      "comment_id": 2,
+      "comment_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
+      "comment_author": "Lorem ipsum"
+    }
+  ],
+  "faq": [
+    {
+        "faq_id": 0,
+        "faq_question": "Here is the Question 1 ?",
+        "faq_answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
+        "faq_URL": "images/faq/faq.png"
+      },
+      {
+        "faq_id": 1,
+        "faq_question": "Here is the Question 2 (no picture)?",
+        "faq_answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
+        "faq_URL": ""
+      },
+      {
+        "faq_id": 2,
+        "faq_question": "Here is the Question 3 ?",
+        "faq_answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
+        "faq_URL": "images/faq/faq.png"
+      }
+  ]
+}

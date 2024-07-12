@@ -67,42 +67,6 @@ function Home() {
                     ))}
                 </div>
 
-                {/* <div className="home-benefit-card">
-                        <img src={icon1} alt="icon1" />
-                        <div className="home-benefit-icon"></div>
-                        <h2>Friendship</h2>
-                        <p>
-                            Shared adventures foster lasting bonds and create unforgettable
-                            memories
-                        </p>
-                    </div>
-                    <div className="home-benefit-card">
-                        <img src={icon2} alt="icon2" />
-                        <div className="home-benefit-icon"></div>
-                        <h2>Nature</h2>
-                        <p>
-                            An immersive outdoor experience that fosters a deep appreciation
-                            for the environment
-                        </p>
-                    </div>
-                    <div className="home-benefit-card">
-                        <img src={icon3} alt="icon3" />
-                        <div className="home-benefit-icon"></div>
-                        <h2>Life skills</h2>
-                        <p>
-                            Learn teamwork, communication, and resilience through
-                            hands-onkayaking challenges
-                        </p>
-                    </div>
-                    <div className="home-benefit-card">
-                        <img src={icon4} alt="icon4" />
-                        <div className="home-benefit-icon"></div>
-                        <h2>Confidence</h2>
-                        <p>
-                            Master kayaking to boost self-trust and readiness to tackle new
-                            challenges
-                        </p>
-                    </div> */}
 
             </div>
 
