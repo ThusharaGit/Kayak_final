@@ -2,26 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Niramit", sans-serif;
+  /* background-color: #f6f6f6; */
 }
 
-/* https://html-color.codes/*/
+
 :root {
   --main-text-light: #fff;
-  --main-text-dark: #000;
+  --main-text-dark: #27392f;
 
   --link-hover:#EFC737;
-  --banner-green:#47B83E;
+  --accent-green:#29B406;
   --banner-yellow: #EFC737;
   --footer-bg: #27392F;
-
+  --bg-color: #f6f6f6;
   --bg-mobil-menu:rgba(0, 0, 0, 0.85);
 }
+.niramit-regular {
+  font-family: "Niramit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.niramit-medium {
+  font-family: "Niramit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.niramit-semibold {
+  font-family: "Niramit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
 
+.niramit-bold {
+  font-family: "Niramit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
