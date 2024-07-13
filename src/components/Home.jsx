@@ -1,7 +1,7 @@
 // import React from 'react'
-import mission1 from "../images/mission1.svg";
+import missionpic from "../images/mission_pic.svg";
+import missionbg from "../images/mission_bg.svg";
 import ContactInput from "./ContactInput.jsx";
-// import mission2 from "../images/mission2.png";
 
 
 import HeroImg from "./HeroImg"
@@ -10,19 +10,20 @@ import { benefitCards } from '../data/data.js';
 
 function Home() {
     return (
-        <div className="m-4 bg-bg-color ring-2 ring-green-700">
+        <div className=" bg-bg-color ring-2 ring-green-700">
 
             <HeroImg />
 
             {/* ################################################## MISSION ############################### */}
-            <div className=" ring-2 ring-red-700 ">
+            <div className="m-4 ring-2 ring-red ">
                 <div className=" flex flex-col sm:flex-row justify-center items-center text-center px-8 space-y-4">
                     {/* for mobile mode */}
                     <h1 className="font-niramit text-3xl sm:hidden">Our Mission</h1>
 
-                    <div className="w-2/5">
-                        {/* <img src={mission2} alt="mission2" /> */}
-                        <img src={mission1} alt="mission1" />
+                    <div className="relative  ring-red ring-2 ">
+                       
+                        <img src={missionpic} alt="mission_pic" className="bg-bg-color scale-125"/>
+                        <img src={missionbg} alt="mission_bg" className="absolute -bottom-1 left-8 scale-150"/>
                     </div>
 
                     <div>
