@@ -128,7 +128,8 @@ function Calendar() {
               className={`text-center py-1 text-base min-w-[3rem] hover:rounded-sm hover:bg-main-text-dark hover:text-main-text-light ${
                 isToday(day)
                   ? //   mark actual date if it's today
-                    "bg-accent-green text-main-text-light rounded-sm"
+                    // "bg-accent-green text-main-text-light rounded-sm"                    
+                    "bg-gradient-to-b from-[#29B406] to-[#EFC737]  rounded-sm"
                   : ""
               }`}
               data-date={format(day, "dd-MM-y")}
