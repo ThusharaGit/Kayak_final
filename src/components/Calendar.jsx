@@ -15,11 +15,11 @@ import {
 } from "date-fns";
 
 const VITE_API_KEY = import.meta.env.VITE_API_KEY;
+const VITE_CALID = "";
 
 const weeks = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-function Calendar({ CalID }) {
-  const VITE_CALID = CalID;
+function Calendar() {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [today] = useState(new Date());
   const [tourNext, setTourNext] = useState([]);
@@ -83,7 +83,7 @@ function Calendar({ CalID }) {
       </button>
 
       {/* grid of calendar */}
-      <div className="grid grid-cols-7 gap-px">
+      <div className="grid grid-cols-7 gap-px ">
         {/* navigation arrows for months and years  */}
         <div onClick={prevYear} className="text-center py-2 cursor-pointer">
           {"<<"}
