@@ -79,7 +79,7 @@ function Calendar() {
   return (
     <div className="flex flex-col items-center min-h-[50vh]">
       <button
-        className="text-main-text-light bg-accent-green px-4 py-1 rounded-full m-4 cursor-pointer"
+        className="text-main-text-light bg-accent-green px-4 py-1 rounded-full  cursor-pointer"
         onClick={buttonSetToday}
       >
         Today
