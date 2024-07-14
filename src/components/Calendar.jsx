@@ -38,6 +38,7 @@ function Calendar() {
         setTourNext(
           events.map((event) => ({
             title: event.summary,
+            place: event.location,
             start: event.start.dateTime,
             end: event.end.dateTime,
           }))
@@ -133,13 +134,23 @@ function Calendar() {
             {format(day, "d")}
             {tourNext
               // filter out events that start from today into future / forget past events
-              .filter((available) => isSameDay(day, parseISO(available.start)))
-              .map((available) => (
+              .filter((upcoming) => isSameDay(day, parseISO(upcoming.start)))
+              .map((upcoming) => (
                 <div
-                  key={available.title}
-                  className="bg-accent-yellow w-10 h-6 rounded mx-auto text-white"
+                  key={upcoming.title}
+                  onClick={() =>
+                    alert(
+                      `${upcoming.title}\nPlace: ${
+                        upcoming.place
+                      }\nFrom: ${format(
+                        upcoming.start,
+                        "dd-MM-y"
+                      )}\nTill: ${format(upcoming.end, "dd-MM-y")}`
+                    )
+                  }
+                  className="bg-banner-yellow w-10 h-6 rounded mx-auto text-main-text-dark"
                 >
-                  <p>{available.title}</p>
+                  <p>new</p>
                 </div>
               ))}
           </div>
