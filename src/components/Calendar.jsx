@@ -121,17 +121,22 @@ function Calendar() {
 
         {/* days of current months - filled from useStates */}
         {numDays.map((day) => (
-          <div
-            key={day.toString()}
-            className={`text-center py-2 text-base min-w-[3rem] cursor-pointer hover:bg-main-text-dark hover:text-main-text-light ${
-              isToday(day)
-                ? //   mark actual date if it's today
-                  "bg-accent-green text-main-text-light rounded-sm"
-                : ""
-            }`}
-            data-date={format(day, "dd-MM-y")}
-          >
-            {format(day, "d")}
+          <div>
+            {/* render month's day as number */}
+            <div
+              key={day.toString()}
+              className={`text-center py-1 text-base min-w-[3rem] hover:rounded-sm hover:bg-main-text-dark hover:text-main-text-light ${
+                isToday(day)
+                  ? //   mark actual date if it's today
+                    "bg-accent-green text-main-text-light rounded-sm"
+                  : ""
+              }`}
+              data-date={format(day, "dd-MM-y")}
+            >
+              {format(day, "d")}
+            </div>
+
+            {/* add event if received from API */}
             {tourNext
               // filter out events that start from today into future / forget past events
               .filter((upcoming) => isSameDay(day, parseISO(upcoming.start)))
@@ -148,7 +153,7 @@ function Calendar() {
                       )}\nTill: ${format(upcoming.end, "dd-MM-y")}`
                     )
                   }
-                  className="bg-banner-yellow w-10 h-6 rounded mx-auto text-main-text-dark"
+                  className="bg-banner-yellow cursor-pointer w-12 h-6 rounded-sm mx-auto text-center text-main-text-dark"
                 >
                   <p>new</p>
                 </div>
