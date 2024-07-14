@@ -15,7 +15,7 @@ import {
 } from "date-fns";
 
 const VITE_API_KEY = import.meta.env.VITE_API_KEY;
-const VITE_CALID = "";
+const VITE_CALID = import.meta.env.VITE_CALID;
 
 const weeks = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -23,6 +23,7 @@ function Calendar() {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [today] = useState(new Date());
   const [tourNext, setTourNext] = useState([]);
+  console.log(tourNext);
   const hasFetchedData = useRef(false);
 
   useEffect(() => {
@@ -33,11 +34,12 @@ function Calendar() {
       try {
         const response = await axios.get(url);
         const events = response.data.items;
+        console.log("API :", events);
         setTourNext(
           events.map((event) => ({
             title: event.summary,
-            start: event.start.date,
-            end: event.end.date,
+            start: event.start.dateTime,
+            end: event.end.dateTime,
           }))
         );
       } catch (error) {
@@ -150,6 +152,15 @@ function Calendar() {
           ></div>
         ))}
       </div>
+
+      <iframe
+        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FBerlin&bgcolor=%2333B679&showTz=0&showTabs=0&src=YmV0dHlzbWl0aDQ1MTIzQGdtYWlsLmNvbQ&color=%2333B679"
+        // style="border:solid 1px #777"
+        width="800"
+        height="600"
+        frameborder="0"
+        // scrolling="no"
+      ></iframe>
     </div>
   );
 }
