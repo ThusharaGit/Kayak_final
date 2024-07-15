@@ -18,14 +18,18 @@ function ContactForm() {
   };
 
   return (
-    <div className="w-full p-8 ring-2 ring-red">
-      <h2 className="text-2xl text-center mb-6">CONTACT US</h2>
-      <form className="space-y-4 text-main-text-dark text-lg">
+    <div className="w-full px-8 py-6">
+      <h2 className="text-2xl text-center mb-4">CONTACT US</h2>
+      <form
+        onSubmit={handleSubmit}
+        className="space-y-4 text-main-text-dark text-lg"
+      >
         <div>
           <label htmlFor="name" className="block">
             Name *
           </label>
           <input
+            ref={nameRef}
             type="text"
             id="name"
             name="name"
@@ -37,6 +41,7 @@ function ContactForm() {
             Phone number
           </label>
           <input
+            ref={phoneRef}
             type="tel"
             id="phone"
             name="phone"
@@ -48,6 +53,7 @@ function ContactForm() {
             Email *
           </label>
           <input
+            ref={emailRef}
             type="email"
             id="email"
             name="email"
@@ -59,9 +65,10 @@ function ContactForm() {
             Message *
           </label>
           <textarea
+            ref={messageRef}
             id="message"
             name="message"
-            rows="4"
+            rows="3"
             className="w-full border-b-2 border-accent-green focus:outline-none"
           ></textarea>
         </div>
