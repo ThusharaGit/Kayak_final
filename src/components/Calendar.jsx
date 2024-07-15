@@ -156,7 +156,7 @@ function Calendar() {
                   }
                   className="bg-banner-yellow cursor-pointer w-12 h-6 rounded-sm mx-auto text-center text-main-text-dark"
                 >
-                  <p>new</p>
+                  <p>trip</p>
                 </div>
               ))}
           </div>
