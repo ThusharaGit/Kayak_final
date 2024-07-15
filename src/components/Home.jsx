@@ -1,7 +1,7 @@
 // import React from 'react'
 import missionpic from "../images/mission_pic.svg";
 import missionbg from "../images/mission_bg.svg";
-import ContactInput from "./ContactInput.jsx";
+import Contact from "./Contact.jsx";
 
 
 import HeroImg from "./HeroImg"
@@ -10,7 +10,7 @@ import { benefitCards } from '../data/data.js';
 
 function Home() {
     return (
-        <div className=" bg-bg-color ring-2 ring-green-700">
+        <div className=" bg-bg-color ring-2 ring-green">
 
             <HeroImg />
 
@@ -73,7 +73,7 @@ function Home() {
 
             {/* ################################################## CONTACT ############################### */}
 
-            <ContactInput />
+            <Contact />
 
 
 
