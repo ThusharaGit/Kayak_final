@@ -20,13 +20,13 @@ function Home() {
                     {/* for mobile mode */}
                     <h1 className="font-niramit text-3xl sm:hidden">Our Mission</h1>
 
-                    <div className="relative  ring-red ring-2 ">
+                    <div className="relative w-2/3 sm:w-1/3 ring-red ring-2 ">
                        
-                        <img src={missionpic} alt="mission_pic" className=" scale-125 z-10"/>
-                        <img src={missionbg} alt="mission_bg" className="absolute -bottom-1 left-8 scale-150"/>
+                        <img src={missionpic} alt="mission_pic" className="inset-0 object-cover w-full h-full z-10"/>
+                        <img src={missionbg} alt="mission_bg" className="absolute -bottom-4 left-6 w-full "/>
                     </div>
 
-                    <div>
+                    <div className="sm:w-2/3">
                         {/* for tablet / pc mode */}
                         <h1 className="font-niramit text-4xl hidden sm:block">Our Mission</h1>
 
