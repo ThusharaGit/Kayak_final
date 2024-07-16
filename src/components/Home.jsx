@@ -15,14 +15,14 @@ function Home() {
             <HeroImg />
 
             {/* ################################################## MISSION ############################### */}
-            <div className="m-4 ring-2 ring-red ">
+            <div className="m-4 ring-2 ring-green ">
                 <div className=" flex flex-col sm:flex-row justify-center items-center text-center px-8 space-y-4">
                     {/* for mobile mode */}
                     <h1 className="font-niramit text-3xl sm:hidden">Our Mission</h1>
 
                     <div className="relative  ring-red ring-2 ">
                        
-                        <img src={missionpic} alt="mission_pic" className="bg-bg-color scale-125"/>
+                        <img src={missionpic} alt="mission_pic" className=" scale-125 z-10"/>
                         <img src={missionbg} alt="mission_bg" className="absolute -bottom-1 left-8 scale-150"/>
                     </div>
 
