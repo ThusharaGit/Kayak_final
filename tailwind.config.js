@@ -19,6 +19,11 @@ export default {
       'footer-bg': 'var(--footer-bg)',
       'bg-color': 'var(--bg-color)',
       'bg-mobil-menu': 'var(--bg-mobil-menu)',
+      'red': 'red',
+
+      'blue': 'blue',
+      'green': 'green',
+
     },
   },
   plugins: [],
