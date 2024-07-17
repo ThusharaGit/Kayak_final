@@ -1,7 +1,9 @@
 // import React from 'react'
 import missionpic from "../images/mission_pic.svg";
 import missionbg from "../images/mission_bg.svg";
-import Contact from "./Contact.jsx";
+
+import ContactInput from "./ContactCard.jsx";
+
 
 
 import HeroImg from "./HeroImg"
