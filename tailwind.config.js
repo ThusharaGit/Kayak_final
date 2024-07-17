@@ -20,8 +20,12 @@ export default {
       'bg-color': 'var(--bg-color)',
       'bg-mobil-menu': 'var(--bg-mobil-menu)',
       'red': 'red',
-      'green': 'green',
+
+
       'blue': 'blue',
+      'green': 'green',
+
+
     },
   },
   plugins: [],
