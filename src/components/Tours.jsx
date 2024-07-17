@@ -1,6 +1,7 @@
 // import React from 'react'
 
 import data from "../data/db.json";
+import Calendar from "./Calendar";
 
 function Tours() {
   const tours = data.trips_done;
@@ -19,11 +20,14 @@ function Tours() {
           </div>
           <div className="w-4/5 sm:pl-8">
             <h2 className="text-xl font-bold">{tour.trip_title}</h2>
-            
+
             <p>Date: {tour.trip_date}</p>
           </div>
         </div>
       ))}
+
+      <h1>Tours upcoming</h1>
+      <Calendar />
     </div>
   );
 }

@@ -21,8 +21,10 @@ export default {
       'bg-mobil-menu': 'var(--bg-mobil-menu)',
       'red': 'red',
 
+
       'blue': 'blue',
       'green': 'green',
+
 
     },
   },
