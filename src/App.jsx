@@ -15,8 +15,8 @@ function App() {
 
   return (
     <>
-      
-      <Router>
+      <div className="max-w-[1320px] mx-auto">
+      <Router >
           <Navbar />
           <Routes>
             <Route element={<Home />} path="/" exact />
@@ -27,6 +27,7 @@ function App() {
           </Routes>
           <Footer />
         </Router>
+        </div>
     </>
   )
 }
