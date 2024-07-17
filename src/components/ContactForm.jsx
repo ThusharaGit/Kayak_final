@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 
+import GradientButton from "./general/GradientButton";
+
 function ContactForm() {
   const nameRef = useRef(null);
   const phoneRef = useRef(null);
@@ -15,14 +17,19 @@ function ContactForm() {
       Email: emailRef.current.value,
       Message: messageRef.current.value,
     });
+    // Clear input fields
+    nameRef.current.value = "";
+    phoneRef.current.value = "";
+    emailRef.current.value = "";
+    messageRef.current.value = "";
   };
 
   return (
     <div className="w-full px-8 py-6 ">
-      <h2 className="text-2xl text-center mb-4">CONTACT US</h2>
+      <h2 className="text-xl md:text-2xl text-center mb-4">CONTACT US</h2>
       <form
         onSubmit={handleSubmit}
-        className="space-y-4 text-main-text-dark text-lg"
+        className="space-y-4 text-main-text-dark text-md md:text-lg"
       >
         <div>
           <label htmlFor="name" className="block">
@@ -76,7 +83,14 @@ function ContactForm() {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="w-3/5 bg-accent-green text-main-text-light py-2 px-4 rounded-full"
+            className="      
+              w-[180px] h-[56px]
+              flex items-center justify-center
+              bg-gradient-to-r from-[#47B83E] to-[#EFC737]
+              rounded-[25px]
+              shadow-[1px_1px_3px_rgba(0,0,0,0.6)]
+              text-main-text-light text-[18px]  uppercase font-niramit        
+            "
           >
             SEND
           </button>

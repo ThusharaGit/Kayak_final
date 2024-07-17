@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-const GradientButton = ({ text = "Button Link", route="/" }) => {
+const GradientButton = ({ text = "Button Link", route="/"}) => {
   return (
     <Link
       to={route}

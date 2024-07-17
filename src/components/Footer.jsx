@@ -1,4 +1,4 @@
-import logo_small from "../images/icon1.svg";
+import logo_small from "../images/Logo_short.svg";
 
 function Footer() {
 

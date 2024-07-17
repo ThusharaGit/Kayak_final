@@ -1,12 +1,10 @@
 // import React from 'react'
 import missionpic from "../images/mission_pic.svg";
 import missionbg from "../images/mission_bg.svg";
-
-import ContactInput from "./ContactCard.jsx";
-
-
+import contact_pic from "../images/contact_pic.jpg";
 
 import HeroImg from "./HeroImg"
+import ContactCard from "./ContactCard";
 
 import { benefitCards } from '../data/data.js';
 
@@ -75,7 +73,7 @@ function Home() {
 
             {/* ################################################## CONTACT ############################### */}
 
-            <Contact />
+            <ContactCard contact_pic={contact_pic}/>
 
 
 
