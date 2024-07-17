@@ -18,7 +18,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="w-full px-8 py-6">
+    <div className="w-full px-8 py-6 ">
       <h2 className="text-2xl text-center mb-4">CONTACT US</h2>
       <form
         onSubmit={handleSubmit}
