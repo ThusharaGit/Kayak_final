@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import logo_small from "../images/Logo_short.svg";
 
 function Footer() {
@@ -9,15 +11,15 @@ function Footer() {
         <img src={logo_small} alt="" className="max-w-full max-h-full object-contain" />
       </div>
       {/* flex container of sitemap, box and contact */}
-      <div className="ring-2 ring-red flex flex-col md:flex-row py-4 md:py-0">
+      <div className="flex flex-col md:flex-row py-4 md:pb-0 md:pt-8">
         {/* sitemap */}
         <div className="md:w-1/4 ">
           <h2 className="text-lg font-bold text-center py-4">SITE MAP</h2>
           <nav className="flex flex-col space-y-2 text-center ">
-            <a href="/" className="hover:text-gray-300">Home</a>
-            <a href="./About" className="hover:text-gray-300">About</a>
-            <a href="./Trips" className="hover:text-gray-300">Tours</a>
-            <a href="./FAQs" className="hover:text-gray-300">FAQs</a>
+            <a href="/" className="">Home</a>
+            <a href="/about" className="">About</a>
+            <a href="/tours" className="">Tours</a>
+            <a href="/faq" className="">FAQs</a>
           </nav>
         </div>
         {/* box */}
@@ -47,8 +49,8 @@ function Footer() {
 
       </div>
       {/* copyrigt */}
-      <div className="w-full py-4">
-        <p className="text-center">Copyright © 2023. All rights reserved.</p>
+      <div className="w-full py-2">
+        <p className="text-center">Copyright © 2024. All rights reserved.</p>
       </div>
 
 

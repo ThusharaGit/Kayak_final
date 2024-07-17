@@ -79,8 +79,16 @@ function Calendar() {
   return (
     <div className="flex flex-col items-center min-h-[50vh]">
       <button
-        className="text-main-text-light bg-accent-green px-4 py-1 rounded-full  cursor-pointer"
+        // className="text-main-text-light bg-accent-green px-4 py-1 rounded-full  cursor-pointer"
         onClick={buttonSetToday}
+        className="      
+              w-[90px] h-[28px]
+              flex items-center justify-center
+              bg-gradient-to-r from-[#47B83E] to-[#EFC737]
+              rounded-[25px]
+              shadow-[1px_1px_3px_rgba(0,0,0,0.6)]
+              text-main-text-light text-[16px]  uppercase font-niramit        
+            "
       >
         Today
       </button>
@@ -125,11 +133,11 @@ function Calendar() {
             {/* render month's day as number */}
             <div
               key={day.toString()}
-              className={`text-center py-1 text-base min-w-[3rem] hover:rounded-sm hover:bg-main-text-dark hover:text-main-text-light ${
+              className={`text-center py-1 text-base min-w-[3rem] hover:rounded-sm hover:bg-footer-bg hover:text-main-text-light ${
                 isToday(day)
                   ? //   mark actual date if it's today
                     // "bg-accent-green text-main-text-light rounded-sm"                    
-                    "bg-gradient-to-b from-[#29B406] to-[#EFC737]  rounded-sm"
+                    "bg-gradient-to-r from-[#47B83E] to-[#EFC737]  rounded-sm"
                   : ""
               }`}
               data-date={format(day, "dd-MM-y")}
@@ -138,8 +146,8 @@ function Calendar() {
             </div>
 
             {/* add event if received from API */}
+            {/* filter out events that start from today into future / forget past events */}
             {tourNext
-              // filter out events that start from today into future / forget past events
               .filter((upcoming) => isSameDay(day, parseISO(upcoming.start)))
               .map((upcoming) => (
                 <div
@@ -170,14 +178,14 @@ function Calendar() {
         ))}
       </div>
 
-      <iframe
+      {/* <iframe
         src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FBerlin&bgcolor=%2333B679&showTz=0&showTabs=0&src=YmV0dHlzbWl0aDQ1MTIzQGdtYWlsLmNvbQ&color=%2333B679"
         // style="border:solid 1px #777"
         width="800"
         height="600"
         frameborder="0"
         // scrolling="no"
-      ></iframe>
+      ></iframe> */}
     </div>
   );
 }
