@@ -14,7 +14,7 @@ function Navbar() {
 
 
   return (
-    <div className="text-main-text-dark flex justify-start items-center  bg-main-text-light px-8 py-4">
+    <div className="text-main-text-dark flex justify-start items-center  bg-main-text-light px-6 py-4">
       <div className="w-full sm:w-auto flex justify-between items-center ">
         <Link to="/">
           <img src={logo} alt="Logo" className="max-h-10 sm:max-h-12" />

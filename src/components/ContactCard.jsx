@@ -5,7 +5,7 @@ function ContactCard({ contact_pic }) {
     <>
       <div className="relative  flex flex-col md:flex-row w-full">
         {/* Image container */}
-        <div className=" w-full md:w-1/2 mx-auto md:mx-0">
+        <div className=" w-full h-[650px] md:w-1/2 mx-auto md:mx-0">
           <img
             src={contact_pic}
             alt="Kayak on a lake at sunset"
