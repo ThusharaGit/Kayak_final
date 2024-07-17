@@ -5,12 +5,14 @@ import contact_pic from "../images/contact_pic.jpg";
 
 import HeroImg from "./HeroImg"
 import ContactCard from "./ContactCard";
+import ScrollButton from "./general/ScrollButton";
 
 import { benefitCards } from '../data/data.js';
 
 function Home() {
     return (
         <div className=" bg-bg-color ring-2 ring-green">
+            <ScrollButton />
 
             <HeroImg />
 

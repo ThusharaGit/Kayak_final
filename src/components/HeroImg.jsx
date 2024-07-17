@@ -5,6 +5,7 @@ import hero_image_m from "../images/hero-image-rounded.svg";
 import hero_border from "../images/hero-border.svg";
 import hero_image_l from "../images/hero-image.svg";
 import hero_image from "../images/hero-image-border.jpg";
+import GradientButton from "./general/GradientButton";
 
 function HeroImg() {
   return (
@@ -32,6 +33,10 @@ function HeroImg() {
           alt=""
           className="absolute bottom-0  right-0  h-full"
         />
+      </div>
+
+      <div className="sm:hidden flex justify-center">
+        <GradientButton text="Book a trip" route="/tours" />
       </div>
     </>
   );

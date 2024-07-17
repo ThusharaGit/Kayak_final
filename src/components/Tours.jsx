@@ -2,6 +2,7 @@
 
 import data from "../data/db.json";
 import Calendar from "./Calendar";
+import ScrollButton from "./general/ScrollButton";
 
 function Tours() {
   const tours = data.trips_done;
@@ -9,6 +10,9 @@ function Tours() {
 
   return (
     <div>
+
+      <ScrollButton />
+      
       <h1>Tours done</h1>
       {tours.map((tour) => (
         <div
