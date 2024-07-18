@@ -5,7 +5,7 @@ import GradientCircle from "./general/GradientCircle";
 
 function About() {
   return (
-    <div>
+    <div className="mt-16">
       <ScrollButton />
 
       <h1>About us</h1>

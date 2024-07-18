@@ -9,7 +9,7 @@ function Faq() {
   console.log(faqs);
 
   return (
-    <div>
+    <div className="mt-16">
       <h1>FAQ</h1>
 
       {faqs.map((faq) => (

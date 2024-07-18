@@ -9,7 +9,7 @@ function Tours() {
   console.log(tours);
 
   return (
-    <div>
+    <div className="mt-16">
 
       <ScrollButton />
       

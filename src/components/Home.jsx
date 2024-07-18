@@ -14,7 +14,7 @@ import { benefitCards } from "../data/data.js";
 
 function Home() {
   return (
-    <div className=" bg-bg-color ring-2 ring-green">
+    <div className="mt-16 bg-bg-color">
       <ScrollButton />
 
       <HeroImg />

@@ -7,7 +7,7 @@ import contact_pic from "../images/contact_pic.jpg";
 
 function Contact() {
   return (
-    <div className="" >
+    <div className="mt-16">
 
 <ScrollButton />
 
