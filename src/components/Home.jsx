@@ -24,8 +24,8 @@ function Home() {
 
                     <div className="relative w-2/3 sm:w-1/3 ring-red ring-2 ">
                        
-                        <img src={missionpic} alt="mission_pic" className="inset-0 object-cover w-full h-full z-10"/>
-                        <img src={missionbg} alt="mission_bg" className="absolute -bottom-4 left-6 w-full "/>
+                        <img src={missionpic} alt="mission_pic" className="relative inset-0 object-cover w-full h-full z-10"/>
+                        <img src={missionbg} alt="mission_bg" className="absolute -bottom-4 left-6 w-full z-0 "/>
                     </div>
 
                     <div className="sm:w-2/3">

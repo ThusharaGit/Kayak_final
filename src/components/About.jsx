@@ -8,7 +8,7 @@ function About() {
     <div>
       <ScrollButton />
 
-      <h1>About</h1>
+      <h1>About us</h1>
       <div className="flex justify-between items-center p-8">
         <GradientCircle size="small" text1="6" text2="years" />
         <GradientCircle size="big" text1="23" text2="trips" />
