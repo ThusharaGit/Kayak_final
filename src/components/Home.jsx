@@ -32,7 +32,7 @@ function Home() {
                         {/* for tablet / pc mode */}
                         <h1 className="font-niramit text-4xl hidden sm:block">Our Mission</h1>
 
-                        <div className="py-4 space-y-4 sm:text-2xl">
+                        <div className="p-4 sm:p-8 space-y-4 text-lg sm:text-lg">
                             <p className="font-niramit niramit-regular">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
                                 dolore quibusdam, facilis totam perferendis rem voluptas, omnis
@@ -49,23 +49,21 @@ function Home() {
             </div>
 
             {/* ################################################## TRIPS SPECIAL ############################### */}
-            <div className="sm:hidden ">
+            {/* <div className="sm:hidden ">
                 <h1>here comes the slider for trips special</h1>
-            </div>
+            </div> */}
 
 
-
-            <div className="hidden sm:block">
+            <div className="flex  flex-col justify-center ">
+            {/* <div className="hidden sm:block"> */}
                 <h1 className="font-roboto text-3xl sm:text-4xl text-center">What makes our trips special</h1>
 
-                {/* <div className="ring-2 ring-blue-700"> */}
-
-                <div className="flex justify-between gap-20 ring-2 ring-blue-700">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6  ring-2 ring-blue">
                     {benefitCards.map((card, index) => (
-                        <div key={index} className="flex flex-col  justify-between items-center p-4 ring-2 ring-red-700">
+                        <div key={index} className="ring-2 ring-blue mx-auto flex flex-col w-64 justify-between items-center p-4 text-center">
                             <img className="w-56" src={card.icon} alt={`icon${index + 1}`} />
-                            <h2 className="text-2xl">{card.title}</h2>
-                            <p>{card.description}</p>
+                            <h2 className="text-2xl ">{card.title}</h2>
+                            <p >{card.description}</p>
                         </div>
                     ))}
                 </div>
