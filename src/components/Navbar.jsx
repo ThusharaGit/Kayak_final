@@ -66,7 +66,7 @@ function Navbar() {
       {/* ternary operator according navcolor useState */}
       <div
         className={`fixed top-0 left-0 right-0 z-40 text-main-text-dark flex justify-start items-center px-6 py-4 ${
-          navcolor ? "bg-main-text-dark opacity-90" : "main-text-light"
+          navcolor ? "bg-main-text-dark opacity-95" : "bg-main-text-light"
         }`}
       >
         {/* regular menu in mobile with Logo and Hamburger*/}
@@ -87,7 +87,9 @@ function Navbar() {
 
         {/* Link to router pages */}
         {/* menu in non-mobile sm:text-xl ?*/}
-        <div className="hidden sm:flex ml-4 space-x-4 text-main-text-dark">
+        <div className={`hidden sm:flex ml-4 space-x-4 text-main-text-dark ${
+          navcolor ? "text-main-text-light" : "tex-main-text-dark"
+        }`}>
           <Link to="/">HOME</Link>
           <Link to="/about">ABOUT</Link>
           <Link to="/tours">TOURS</Link>
