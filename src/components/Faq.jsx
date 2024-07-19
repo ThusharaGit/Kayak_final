@@ -1,6 +1,7 @@
 // import React from 'react'
 
 import data from "../data/db.json";
+import faqhero from "../images/faq-hero.svg";
 
 
 function Faq() {
@@ -11,6 +12,7 @@ function Faq() {
   return (
     <div className="mt-16">
       <h1>FAQ</h1>
+      <img className="w-full" src={faqhero} alt="" />
 
       {faqs.map((faq) => (
         <details key={faq.faq_id} className="px-8 mb-4">

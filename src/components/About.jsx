@@ -2,6 +2,7 @@
 
 import ScrollButton from "./general/ScrollButton";
 import GradientCircle from "./general/GradientCircle";
+import abouthero from "../images/about-hero.svg";
 
 function About() {
   return (
@@ -9,6 +10,7 @@ function About() {
       <ScrollButton />
 
       <h1>About us</h1>
+      <img className="w-full" src={abouthero} alt="" />
       <div className="flex justify-between items-center p-8">
         <GradientCircle size="small" text1="6" text2="years" />
         <GradientCircle size="big" text1="23" text2="trips" />

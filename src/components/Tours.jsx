@@ -3,6 +3,7 @@
 import data from "../data/db.json";
 import Calendar from "./Calendar";
 import ScrollButton from "./general/ScrollButton";
+import tourshero from "../images/tours-hero.svg";
 
 function Tours() {
   const tours = data.trips_done;
@@ -14,6 +15,7 @@ function Tours() {
       <ScrollButton />
       
       <h1>Tours done</h1>
+      <img className="w-full" src={tourshero} alt="" />
       {tours.map((tour) => (
         <div
           key={tour.trip_id}

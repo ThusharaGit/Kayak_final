@@ -4,6 +4,7 @@ import ContactCard from "./ContactCard";
 import ScrollButton from "./general/ScrollButton";
 
 import contact_pic from "../images/contact_pic.jpg";
+import contacthero from "../images/contact-hero.svg";
 
 function Contact() {
   return (
@@ -11,7 +12,8 @@ function Contact() {
 
 <ScrollButton />
 
-      <h1>Get in touch with us to plan the next exciting trip! </h1> 
+      <h1>Get in touch with us to plan the next exciting trip! </h1>
+      <img className="w-full" src={contacthero} alt="" /> 
        <ContactCard contact_pic={contact_pic} />
     </div>
   );
