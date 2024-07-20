@@ -1,4 +1,7 @@
 // import React from 'react'
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import missionpic from "../images/mission_pic.svg";
 import missionbg from "../images/mission_bg.svg";
 import contact_pic from "../images/contact_pic.jpg";
@@ -13,6 +16,12 @@ import MoreButton from "./general/MoreButton";
 import { benefitCards } from "../data/data.js";
 
 function Home() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
   return (
     <div className="mt-16 bg-bg-color">
       <ScrollButton />

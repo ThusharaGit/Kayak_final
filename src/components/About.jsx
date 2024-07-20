@@ -1,10 +1,18 @@
 // import React from 'react'
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import ScrollButton from "./general/ScrollButton";
 import GradientCircle from "./general/GradientCircle";
 import abouthero from "../images/about-hero.svg";
 
 function About() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
   return (
     <div className="mt-16">
       <ScrollButton />

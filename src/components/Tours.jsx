@@ -1,4 +1,6 @@
 // import React from 'react'
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import data from "../data/db.json";
 import Calendar from "./Calendar";
@@ -6,6 +8,12 @@ import ScrollButton from "./general/ScrollButton";
 import tourshero from "../images/tours-hero.svg";
 
 function Tours() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
   const tours = data.trips_done;
   console.log(tours);
 
