@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 
 import ScrollButton from "./general/ScrollButton";
 import ScrollTextButton from "./general/ScrollTextButton";
+import BlackButton from "./general/BlackButton";
 
 import data from "../data/db.json";
 import faqhero from "../images/faq-hero.svg";
@@ -19,7 +20,7 @@ function Faq() {
   console.log(faqs);
 
   return (
-    <div className="mt-16 bg-bg-color flex flex-col items-center">
+    <div className="mt-16 bg-bg-color flex flex-col items-center space-y-12">
       <ScrollButton />
 
       <img className="w-full" src={faqhero} alt="" />
@@ -32,7 +33,10 @@ function Faq() {
 
       <div className="md:w-4/5 md:px-0 w-full px-12 mx-auto">
         {faqs.map((faq) => (
-          <details key={faq.faq_id} className="mb-4 pl-2 bg-main-text-light rounded-lg">
+          <details
+            key={faq.faq_id}
+            className="mb-4 pl-2 bg-main-text-light rounded-lg"
+          >
             <summary className="text-xl cursor-pointer uppercase">
               {faq.faq_question}
             </summary>
@@ -46,8 +50,16 @@ function Faq() {
         ))}
       </div>
 
-      {/* For these frames:
-Colors: #BFFFB5 and #FFF9BF */}
+      <div className="w-2/3 mx-auto p-4 text-xl rounded-lg flex flex-col items-center space-y-4 bg-gradient-to-b from-[#BFFFB5] to-[#FFF9BF]">
+        <h1>Still have a question?</h1>
+
+        <h1>
+          Contact us for more details. Lorem ipsum sit amet, adipiscing elit.
+        </h1>
+
+        <BlackButton text="Contact us" route="/contact" />
+      </div>
+
       <ScrollTextButton />
     </div>
   );
