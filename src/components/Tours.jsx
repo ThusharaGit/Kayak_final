@@ -2,9 +2,12 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+import ScrollButton from "./general/ScrollButton";
+import ScrollTextButton from "./general/ScrollTextButton";
+
 import data from "../data/db.json";
 import Calendar from "./Calendar";
-import ScrollButton from "./general/ScrollButton";
+
 import tourshero from "../images/tours-hero.svg";
 
 function Tours() {
@@ -18,11 +21,11 @@ function Tours() {
   console.log(tours);
 
   return (
-    <div className="mt-16">
+    <div className="mt-16 bg-bg-color flex flex-col items-center space-y-12">
 
       <ScrollButton />
       
-      <h1>Tours done</h1>
+  
       <img className="w-full" src={tourshero} alt="" />
       {tours.map((tour) => (
         <div
@@ -42,6 +45,10 @@ function Tours() {
 
       <h1>Tours upcoming</h1>
       <Calendar />
+
+
+
+      <ScrollTextButton />
     </div>
   );
 }

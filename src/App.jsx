@@ -9,6 +9,7 @@ import Tours from "./components/Tours";
 import Faq from "./components/Faq";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Error404 from "./components/Error404";
 
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/tours" element={<Tours />} />
             <Route path="/faq" element={<Faq />} />
-            <Route path="/contact" element={<Contact />} />  
+            <Route path="/contact" element={<Contact />} /> 
+            <Route path="*" element={<Error404/>} />  
           </Routes>
           <Footer />
         </Router>

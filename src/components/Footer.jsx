@@ -33,7 +33,12 @@ function Footer() {
         </div>
         {/* conatct us */}
         <div className="mx-auto py-4 items-center md:w-1/4">
-          <h2 className=" text-lg font-bold">CONTACT US</h2>
+          <h2 className=" text-lg font-bold">
+            <Link to="/contact" >
+            CONTACT US
+            </Link>
+            
+            </h2>
           <p>Clubul Copiilor Năsăud</p>
           <p>DN17C 9, Nasaud 425200,</p>
           <p>Romania</p>
