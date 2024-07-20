@@ -50,7 +50,7 @@ function Faq() {
         ))}
       </div>
 
-      <div className="w-2/3 mx-auto p-4 text-xl rounded-lg flex flex-col items-center space-y-4 bg-gradient-to-b from-[#BFFFB5] to-[#FFF9BF]">
+      <div className="w-2/3 mx-auto p-4 text-xl text-center rounded-lg flex flex-col items-center space-y-4 bg-gradient-to-b from-[#BFFFB5] to-[#FFF9BF]">
         <h1>Still have a question?</h1>
 
         <h1>
