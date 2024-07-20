@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 
 import ScrollButton from "./general/ScrollButton";
 import ScrollTextButton from "./general/ScrollTextButton";
+import GradientButton from "./general/GradientButton";
 
 import data from "../data/db.json";
 import Calendar from "./Calendar";
@@ -16,17 +17,41 @@ function Tours() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
-  
+
   const tours = data.trips_done;
   console.log(tours);
 
   return (
     <div className="mt-16 bg-bg-color flex flex-col items-center space-y-12">
-
-      <ScrollButton />
-      
-  
       <img className="w-full" src={tourshero} alt="" />
+      <ScrollButton />
+
+      <h1 className="w-full px-8 py-8 text-2xl text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed incididunt.
+        Ut enim ad minim veniam!{" "}
+      </h1>
+
+      <div className="w-2/3 mx-auto p-4 text-xl text-center rounded-lg flex flex-col items-center space-y-4 bg-gradient-to-b from-[#BFFFB5] to-[#FFF9BF]">
+        <h1>NEW TRIPS ARE STARTING IN MARCH!</h1>
+
+        <p>
+          Check the schedule of our upcoming trips and make sure to book a spot
+          there!
+        </p>
+
+        <p>For more details contact us here:</p>
+
+        <div className="flex ">
+          <span className="bg-banner-yellow h-10 w-10">9</span>
+          <p>- dates of our next trips which you can choose from</p>
+        </div>
+      </div>
+
+      {/* ############### Calendar #################  */}
+      <Calendar />
+      <GradientButton text="Book a trip" route="/contact" />
+
+      {/* ############### Tour pictures #################  */}
       {tours.map((tour) => (
         <div
           key={tour.trip_id}
@@ -44,9 +69,6 @@ function Tours() {
       ))}
 
       <h1>Tours upcoming</h1>
-      <Calendar />
-
-
 
       <ScrollTextButton />
     </div>
