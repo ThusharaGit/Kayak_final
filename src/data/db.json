@@ -39,21 +39,33 @@
   "faq": [
     {
         "faq_id": 0,
-        "faq_question": "Here is the Question 1 ?",
-        "faq_answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
+        "faq_question": "FROM WHICH AGE CAN My child go on trips?",
+        "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
         "faq_URL": "images/faq/faq.png"
       },
       {
         "faq_id": 1,
-        "faq_question": "Here is the Question 2 (no picture)?",
-        "faq_answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
+        "faq_question": "What things do i have to bring?",
+        "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
         "faq_URL": ""
       },
       {
         "faq_id": 2,
-        "faq_question": "Here is the Question 3 ?",
-        "faq_answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
-        "faq_URL": "images/faq/faq.png"
+        "faq_question": "what kinds of tours do you have?",
+        "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
+        "faq_URL": ""
+      },
+      {
+        "faq_id": 3,
+        "faq_question": "is it safe for a child to go kayaking?",
+        "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
+        "faq_URL": ""
+      },
+      {
+        "faq_id": 4,
+        "faq_question": "who takes care of children during the trip?",
+        "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
+        "faq_URL": ""
       }
   ]
 }

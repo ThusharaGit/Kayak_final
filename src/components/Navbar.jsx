@@ -1,14 +1,19 @@
 import { Link } from "react-router-dom";
-
+import { useLocation } from "react-router-dom";
 import React, { useState } from "react";
 // import "./Navbar.css";
+import BlackButton from "./general/BlackButton";
 
 // Logo should be a svg file
 // https://www.freecodecamp.org/news/use-svg-images-in-css-html/
 import logo from "../images/logo_paddlexplorer.svg";
 import hamburger from "../images/hamburger.svg";
+import hamburger_close from "../images/hamburger_close.svg";
 
 function Navbar() {
+  const { pathname } = useLocation();
+  console.log(pathname);
+
   // for mobile hamburger menue
   const [isShown, setIsShown] = useState(false);
   const [navcolor, setNavcolor] = useState(false);
@@ -32,31 +37,51 @@ function Navbar() {
     return (
       <nav
         className={
-          "flex flex-col justify-between items-center space-y-4 bg-main-text-light z-50 ring-2 ring-red"
+          "fixed inset-0 z-50 flex px-6 py-4 opacity-95 flex-col  items-center space-y-4 bg-main-text-light transition-opacity duration-300 ease-in-out"
         }
       >
-        <img src={logo} alt="Logo" />
+        <div className="w-full flex justify-between items-center ">
+          <Link to="/">
+            <img src={logo} alt="Logo" className="max-h-10 sm:max-h-12" />
+          </Link>
 
-        <button className="size-12" onClick={toggleMobileMenu}>
-          X{/* &times; */}
-        </button>
+          <img
+            onClick={toggleMobileMenu}
+            src={hamburger_close}
+            alt="hamburger"
+            className=""
+          />
+        </div>
 
         {/* Link to router pages */}
-        <Link to="/" onClick={toggleMobileMenu}>
-          HOME
-        </Link>
-        <Link to="/about" onClick={toggleMobileMenu}>
-          ABOUT
-        </Link>
-        <Link to="/tours" onClick={toggleMobileMenu}>
-          TOURS
-        </Link>
-        <Link to="/faq" onClick={toggleMobileMenu}>
-          FAQs
-        </Link>
-        <Link to="/contact" onClick={toggleMobileMenu}>
-          CONTACT
-        </Link>
+        <div className="pt-32 flex flex-col items-center text-xl space-y-8">
+          <Link to="/" onClick={toggleMobileMenu}>
+            HOME
+          </Link>
+          <Link to="/about" onClick={toggleMobileMenu}>
+            ABOUT
+          </Link>
+          <Link to="/tours" onClick={toggleMobileMenu}>
+            TOURS
+          </Link>
+          <Link to="/faq" onClick={toggleMobileMenu}>
+            FAQs
+          </Link>
+          <Link
+            to="/contact"
+            onClick={toggleMobileMenu}
+            className="      
+            w-[180px] h-[56px]
+            flex items-center justify-center
+            bg-main-text-dark
+            rounded-[25px]
+            shadow-[1px_1px_3px_rgba(0,0,0,0.6)]
+            text-main-text-light text-[18px]  uppercase font-niramit        
+          "
+          >
+            CONTACT
+          </Link>
+        </div>
       </nav>
     );
   };
@@ -84,17 +109,35 @@ function Navbar() {
         </div>
 
         {/* redering the mobile menu and the close button */}
-
-        {/* Link to router pages */}
         {/* menu in non-mobile sm:text-xl ?*/}
-        <div className={`hidden sm:flex ml-4 space-x-4 text-main-text-dark ${
-          navcolor ? "text-main-text-light" : "tex-main-text-dark"
-        }`}>
+        <div
+          className={`hidden sm:flex ml-4 space-x-4 text-main-text-dark ${
+            navcolor ? "text-main-text-light" : "tex-main-text-dark"
+          }`}
+        >
           <Link to="/">HOME</Link>
           <Link to="/about">ABOUT</Link>
           <Link to="/tours">TOURS</Link>
           <Link to="/faq">FAQs</Link>
-          <Link to="/contact">CONTACT</Link>
+          <Link
+            to="/contact"
+            // className={`${pathname === "/contact" ? "text-blue" : ""}`}
+          >
+            CONTACT
+          </Link>
+
+          {/* <div>
+            {pathname === "/contact" ? (
+              <BlackButton text="CONTACT" link="/contact" />
+            ) : (
+              <Link
+                to="/contact"
+                // className={`${pathname === "/contact" ? "text-blue" : ""}`}
+              >
+                CONTACT
+              </Link>
+            )}
+          </div> */}
         </div>
       </div>
       {isShown && <MobileMenu />}

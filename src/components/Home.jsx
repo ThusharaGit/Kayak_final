@@ -21,7 +21,7 @@ function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
-  
+
   return (
     <div className="mt-16 bg-bg-color">
       <ScrollButton />
