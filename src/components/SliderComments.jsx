@@ -21,7 +21,7 @@ function SliderComments({ comments }) {
 
   return (
     <>
-      <div className="w-full p-4 rounded-[25px] bg-gradient-to-b from-[#7DE581] to-[#FFD977] ring-2 ring-red">
+      <div className="w-full p-4 rounded-[25px] bg-gradient-to-b from-[#7DE581] to-[#FFD977]">
         <img src={quoteL} alt="" className="ml-4" />
 
         {comments &&
