@@ -1,4 +1,27 @@
 {
+  "team_member": [
+    {
+      "team_id": "0",
+      "team_name": "Alexandru Ionescu",
+      "team_title": "TOUR GUIDE",
+      "team_desc": "Lorem ipsum 1 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ex ea commodo consequat.",
+      "team_URL": "images/team/about-team-person1.svg"
+    },
+    {
+      "team_id": "1",
+      "team_name": "Alexandru Ionescu",
+      "team_title": "TOUR GUIDE",
+      "team_desc": "Lorem ipsum 2 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ex ea commodo consequat.",
+      "team_URL": "images/team/about-team-person2.svg"
+    },
+    {
+      "team_id": "2",
+      "team_name": "Alexandru Ionescu",
+      "team_title": "TOUR GUIDE",
+      "team_desc": "Lorem ipsum 3 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ex ea commodo consequat.",
+      "team_URL": "images/team/about-team-person3.svg"
+    }
+  ],
   "trips_done": [
     {
       "trip_id": "0",
@@ -48,34 +71,34 @@
   ],
   "faq": [
     {
-        "faq_id": 0,
-        "faq_question": "FROM WHICH AGE CAN My child go on trips?",
-        "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
-        "faq_URL": "images/faq/faq.png"
-      },
-      {
-        "faq_id": 1,
-        "faq_question": "What things do i have to bring?",
-        "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
-        "faq_URL": ""
-      },
-      {
-        "faq_id": 2,
-        "faq_question": "what kinds of tours do you have?",
-        "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
-        "faq_URL": ""
-      },
-      {
-        "faq_id": 3,
-        "faq_question": "is it safe for a child to go kayaking?",
-        "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
-        "faq_URL": ""
-      },
-      {
-        "faq_id": 4,
-        "faq_question": "who takes care of children during the trip?",
-        "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
-        "faq_URL": ""
-      }
+      "faq_id": 0,
+      "faq_question": "FROM WHICH AGE CAN My child go on trips?",
+      "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
+      "faq_URL": "images/faq/faq.png"
+    },
+    {
+      "faq_id": 1,
+      "faq_question": "What things do i have to bring?",
+      "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
+      "faq_URL": ""
+    },
+    {
+      "faq_id": 2,
+      "faq_question": "what kinds of tours do you have?",
+      "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
+      "faq_URL": ""
+    },
+    {
+      "faq_id": 3,
+      "faq_question": "is it safe for a child to go kayaking?",
+      "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
+      "faq_URL": ""
+    },
+    {
+      "faq_id": 4,
+      "faq_question": "who takes care of children during the trip?",
+      "faq_answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
+      "faq_URL": ""
+    }
   ]
 }
