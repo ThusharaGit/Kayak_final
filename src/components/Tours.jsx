@@ -18,6 +18,7 @@ function Tours() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  // parse data from db.json file
   const tours = data.trips_done;
   console.log(tours);
 
@@ -68,7 +69,6 @@ function Tours() {
         </div>
       ))}
 
-      <h1>Tours upcoming</h1>
 
       <ScrollTextButton />
     </div>

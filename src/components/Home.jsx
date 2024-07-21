@@ -5,15 +5,16 @@ import { useLocation } from "react-router-dom";
 import missionpic from "../images/mission_pic.svg";
 import missionbg from "../images/mission_bg.svg";
 import contact_pic from "../images/contact_pic.jpg";
-import quoteL from "../images/quoteL.svg";
-import quoteR from "../images/quoteR.svg";
+
 
 import HeroImg from "./HeroImg";
+import SliderComments from "./SliderComments";
 import ContactCard from "./ContactCard";
 import ScrollButton from "./general/ScrollButton";
 import MoreButton from "./general/MoreButton";
 
 import { benefitCards } from "../data/data.js";
+import data from "../data/db.json";
 
 function Home() {
   const { pathname } = useLocation();
@@ -21,6 +22,10 @@ function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  // parse data from db.json file
+  const comments = data.comments;
+//   console.log(comments);
 
   return (
     <div className="mt-16 bg-bg-color">
@@ -119,23 +124,8 @@ function Home() {
         </div>
 
         {/* caroussel comments */}
-        <div className="w-full p-4 rounded-[25px] bg-gradient-to-b from-[#7DE581] to-[#FFD977] ring-2 ring-red">
-          <img src={quoteL} alt="" className="ml-4" />
-          <div className="w-full px-8">
-            <p>
-              As a parent, seeing my child's growth through PaddleXplorer has
-              been an absolute joy. The unique blend of outdoor adventure and
-              character development has boosted his confidence immensely. He
-              made great friends and learned invaluable life skills - all while
-              having a ton of fun on the water. I couldn't recommend
-              PaddleXplorer less!
-            </p>
-            <p>Brindusa W., Proud Parent</p>
-          </div>
-          <img src={quoteR} alt="" className="mr-4 ml-auto" />
-        </div>
+        <SliderComments comments={comments} />
       </div>
-
       {/* ################################################## NEW TRIPS ############################### */}
       <div className="m-4 ring-2 ring-green text-center">
         <h1 className="font-roboto text-3xl sm:text-4xl">
