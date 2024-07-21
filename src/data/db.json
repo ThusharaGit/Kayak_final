@@ -27,12 +27,12 @@
     },
     {
       "comment_id": 1,
-      "comment_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
+      "comment_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
       "comment_author": "Lorem ipsum"
     },
     {
       "comment_id": 2,
-      "comment_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
+      "comment_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
       "comment_author": "Lorem ipsum"
     }
   ],

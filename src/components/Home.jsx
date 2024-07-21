@@ -34,7 +34,7 @@ function Home() {
       <HeroImg />
 
       {/* ################################################## MISSION ############################### */}
-      <div className="m-4 ring-2 ring-green ">
+      <div className="m-4">
         <div className=" flex flex-col sm:flex-row justify-center items-center text-center px-8 space-y-4">
           {/* for mobile mode */}
           <h1 className="font-niramit text-3xl sm:hidden">OUR MISSION</h1>
@@ -86,11 +86,11 @@ function Home() {
           WHAT MAKES TRIPS SPECIAL
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6  ring-2 ring-blue">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {benefitCards.map((card, index) => (
             <div
               key={index}
-              className="ring-2 ring-blue mx-auto flex flex-col w-64 justify-between items-center p-4 text-center"
+              className="mx-auto flex flex-col w-64 justify-between items-center p-4 text-center"
             >
               <img className="w-56" src={card.icon} alt={`icon${index + 1}`} />
               <h2 className="text-2xl ">{card.title}</h2>
@@ -114,11 +114,11 @@ function Home() {
       {/* ################################################## WHAT PARENTS SAY ############################### */}
       <div className="m-4 flex flex-col lg:flex-row ring-2 ring-green ">
         {/* text titel */}
-        <div className="w-full ring-2 ring-red">
-          <h1 className="font-roboto text-3xl sm:text-4xl text-center">
+        <div className="w-full font-roboto text-3xl sm:text-4xl text-center">
+          <h1 className="">
             WHAT PARENTS SAY
           </h1>
-          <h1 className="font-roboto text-3xl sm:text-4xl text-center">
+          <h1 className="">
             ABOUT OUR PROJECT:
           </h1>
         </div>
