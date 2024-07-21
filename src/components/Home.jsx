@@ -9,11 +9,13 @@ import contact_pic from "../images/contact_pic.jpg";
 
 import HeroImg from "./HeroImg";
 import SliderComments from "./SliderComments";
+import SliderTours from "./SliderTours";
 import ContactCard from "./ContactCard";
 import ScrollButton from "./general/ScrollButton";
 import MoreButton from "./general/MoreButton";
 
 import { benefitCards } from "../data/data.js";
+// import database with all tables
 import data from "../data/db.json";
 
 function Home() {
@@ -25,6 +27,7 @@ function Home() {
 
   // parse data from db.json file
   const comments = data.comments;
+  const trips_done = data.trips_done;
 //   console.log(comments);
 
   return (
@@ -104,7 +107,8 @@ function Home() {
         <h1 className="font-roboto text-3xl sm:text-4xl text-center">
           OUR PREVIOUS TRIPS
         </h1>
-        <h1>here comes a CAROUSELL</h1>
+        
+        <SliderTours trips_done={trips_done} />
 
         <div className="w-full flex justify-center">
           <MoreButton text={"More trips"} route="/tours" />
