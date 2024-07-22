@@ -103,7 +103,7 @@ function Home() {
         </div>
       </div>
       {/* ################################################## PREVIOUS TRIPS ############################### */}
-      <div className="m-4 ring-2 ring-green ">
+      <div className="m-4  ">
         <h1 className="font-roboto text-3xl sm:text-4xl text-center">
           OUR PREVIOUS TRIPS
         </h1>
@@ -116,7 +116,7 @@ function Home() {
       </div>
 
       {/* ################################################## WHAT PARENTS SAY ############################### */}
-      <div className="m-4 flex flex-col lg:flex-row ring-2 ring-green ">
+      <div className="m-4 flex flex-col lg:flex-row  ">
         {/* text titel */}
         <div className="w-full font-roboto text-3xl sm:text-4xl text-center">
           <h1 className="">
@@ -131,13 +131,13 @@ function Home() {
         <SliderComments comments={comments} />
       </div>
       {/* ################################################## NEW TRIPS ############################### */}
-      <div className="m-4 ring-2 ring-green text-center">
+      <div className="m-4  text-center">
         <h1 className="font-roboto text-3xl sm:text-4xl">
           NEW TRIPS ARE COMING
         </h1>
         <p>Ready to embark on an unforgettable adventure?</p>
         <p>
-          Contact us today to book your child's spot on our next kayaking
+          Contact us today to book your child`s spot on our next kayaking
           journey.
         </p>
       </div>

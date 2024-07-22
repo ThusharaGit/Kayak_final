@@ -41,7 +41,7 @@ function HeroImg() {
       {/* tablet/pc view */}
       <div className="relative bg-main-text-light hidden sm:block h-[700px]">
         
-        <div className="absolute z-10 lg:top-32 top-4 lg:left-24 left-10 space-y-10 ring-2 ring-blue">
+        <div className="absolute z-10 lg:top-32 top-4 lg:left-24 left-10 space-y-10 ">
           <img src={empowering_youth} alt="" className=" " />
 
           <p className=" text-3xl  ">

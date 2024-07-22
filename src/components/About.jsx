@@ -35,7 +35,7 @@ function About() {
       <img className="w-full" src={abouthero} alt="" />
 
       {/* ############################## TEAM ###########################*/}
-      <div className="px-4 flex flex-col-reverse md:flex-row items-center gap-10 ring-2 ring-red">
+      <div className="px-4 flex flex-col-reverse md:flex-row items-center gap-10 ">
         <div>
           <h1>“Lorem ipsum dolor sit amet, consectetur elit!’’</h1>
           <p>
