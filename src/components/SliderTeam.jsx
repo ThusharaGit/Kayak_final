@@ -20,7 +20,7 @@ function SliderTeam({ team_member }) {
   };
 
   return (
-    <div className="w-full md:w-2/4 p-4 rounded-[25px] bg-main-text-light shadow">
+    <div className="w-full lg:w-2/3 p-4 rounded-[25px] bg-main-text-light shadow">
 
       
 

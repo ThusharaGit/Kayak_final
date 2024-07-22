@@ -6,6 +6,7 @@ import ScrollButton from "./general/ScrollButton";
 import ScrollTextButton from "./general/ScrollTextButton";
 import GradientButton from "./general/GradientButton";
 import GradientCircleIcon from "./general/GradientCircleIcon";
+import MoreButton from "./general/MoreButton";
 
 import data from "../data/db.json";
 import Calendar from "./Calendar";
@@ -60,28 +61,50 @@ function Tours() {
         </div>
       </div>
 
-      {/* ############### Tour pictures #################  */}
-      {tours.map((tour) => (
-        <div
-          key={tour.trip_id}
-          className="flex flex-col sm:flex-row justify-center items-center text-center px-8 space-y-4"
-        >
-          <div className="w-1/5">
-            <img src={tour.trip_URL} alt={tour.trip_title} />
-          </div>
-          <div className="w-4/5 sm:pl-8">
-            <h2 className="text-xl font-bold">{tour.trip_title}</h2>
+      <h1 className="text-2xl text-center uppercase">previous trips</h1>
 
-            <p>Date: {tour.trip_date}</p>
-          </div>
-        </div>
-      ))}
-
-      {/* ############### Tour Details #################  */}
+      {/* ############### Tour Details  1 #################  */}
       <div className="flex flex-col sm:flex-row justify-between items-center gap-8">
         <GradientCircleIcon icon={icon1} text1="Difficulty" text2="3/10" />
         <GradientCircleIcon icon={icon2} text1="Age" text2="7-10 years" />
         <GradientCircleIcon icon={icon3} text1="Duration" text2="4 hours" />
+      </div>
+
+      <div className="w-2/3 lg:w-4/5 flex flex-col lg:flex-row justify-between items-center gap-8">
+        <img src={tours[0].trip_URL} alt="" />
+
+        <div>
+          <h2 className="text-xl font-bold">{tours[0].trip_title}</h2>
+          <p>Date: {tours[0].trip_date}</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor et dolore magna. Ut enim ad minim veniam, exerci
+            commodo conseq, uat sit amet, consectetur adipiscing.
+          </p>
+          <MoreButton text={"See Details"} route="/tours" />
+        </div>
+      </div>
+
+      {/* ############### Tour Details  2 #################  */}
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-8">
+        <GradientCircleIcon icon={icon1} text1="Difficulty" text2="5/10" />
+        <GradientCircleIcon icon={icon2} text1="Age" text2="7-10 years" />
+        <GradientCircleIcon icon={icon3} text1="Duration" text2="6 hours" />
+      </div>
+
+      <div className="w-2/3 lg:w-4/5 flex flex-col lg:flex-row-reverse justify-between items-center gap-8">
+        <img src={tours[1].trip_URL} alt="" />
+
+        <div>
+          <h2 className="text-xl font-bold">{tours[1].trip_title}</h2>
+          <p>Date: {tours[1].trip_date}</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor et dolore magna. Ut enim ad minim veniam, exerci
+            commodo conseq, uat sit amet, consectetur adipiscing.
+          </p>
+          <MoreButton text={"See Details"} route="/tours" />
+        </div>
       </div>
 
       <ScrollTextButton />

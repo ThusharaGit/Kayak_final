@@ -90,7 +90,7 @@ function Navbar() {
     <>
       {/* ternary operator according navcolor useState */}
       <div
-        className={`fixed top-0 left-0 right-0 z-40 text-main-text-dark flex justify-start items-center px-6 py-4 ${
+        className={`max-w-[1320px] mx-auto fixed top-0 left-0 right-0 z-40 text-main-text-dark flex justify-start items-center px-6 py-4 ${
           navcolor ? "bg-main-text-dark opacity-95" : "bg-main-text-light"
         }`}
       >
