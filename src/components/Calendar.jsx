@@ -77,9 +77,9 @@ function Calendar() {
   const nextMonth = () => setCurrentDate(add(currentDate, { months: 1 }));
 
   return (
-    <div className="flex flex-col items-center min-h-[50vh]">
+    <div className="flex flex-col items-center">
       <button
-        // className="text-main-text-light bg-accent-green px-4 py-1 rounded-full  cursor-pointer"
+        
         onClick={buttonSetToday}
         className="      
               w-[90px] h-[28px]
