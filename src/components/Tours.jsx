@@ -27,7 +27,7 @@ function Tours() {
   console.log(tours);
 
   return (
-    <div className="mt-16 bg-bg-color flex flex-col items-center space-y-12">
+    <div className="mt-16  bg-bg-color flex flex-col items-center space-y-12">
       <img className="w-full" src={tourshero} alt="" />
       <ScrollButton />
 
@@ -36,25 +36,29 @@ function Tours() {
         Ut enim ad minim veniam!{" "}
       </h1>
 
-      <div className="w-2/3 mx-auto p-4 text-xl text-center rounded-lg flex flex-col items-center space-y-4 bg-gradient-to-b from-[#BFFFB5] to-[#FFF9BF]">
-        <h1>NEW TRIPS ARE STARTING IN MARCH!</h1>
+      <div className="px-4 flex flex-col lg:flex-row justify-between items-center gap-8">
+        <div className="w-2/3 lg:w-1/2 mx-auto p-4 text-xl text-center rounded-lg flex flex-col items-center space-y-4 bg-gradient-to-b from-[#BFFFB5] to-[#FFF9BF]">
+          <h1>NEW TRIPS ARE STARTING IN MARCH!</h1>
 
-        <p>
-          Check the schedule of our upcoming trips and make sure to book a spot
-          there!
-        </p>
+          <p>
+            Check the schedule of our upcoming trips and make sure to book a
+            spot there!
+          </p>
 
-        <p>For more details contact us here:</p>
+          <p>For more details contact us here:</p>
 
-        <div className="flex ">
-          <span className="bg-banner-yellow h-10 w-10">9</span>
-          <p>- dates of our next trips which you can choose from</p>
+          <div className="flex ">
+            <span className="bg-banner-yellow h-10 w-10">9</span>
+            <p>- dates of our next trips which you can choose from</p>
+          </div>
+        </div>
+
+        {/* ############### Calendar #################  */}
+        <div className="flex flex-col items-center justify-center gap-10">
+          <Calendar />
+          <GradientButton text="Book a trip" route="/contact" />
         </div>
       </div>
-
-      {/* ############### Calendar #################  */}
-      <Calendar />
-      <GradientButton text="Book a trip" route="/contact" />
 
       {/* ############### Tour pictures #################  */}
       {tours.map((tour) => (
@@ -77,7 +81,7 @@ function Tours() {
       <div className="flex flex-col sm:flex-row justify-between items-center gap-8">
         <GradientCircleIcon icon={icon1} text1="Difficulty" text2="3/10" />
         <GradientCircleIcon icon={icon2} text1="Age" text2="7-10 years" />
-        <GradientCircleIcon icon={icon3} text1="Duration" text2="4 hours" />        
+        <GradientCircleIcon icon={icon3} text1="Duration" text2="4 hours" />
       </div>
 
       <ScrollTextButton />
