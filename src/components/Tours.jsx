@@ -5,11 +5,15 @@ import { useLocation } from "react-router-dom";
 import ScrollButton from "./general/ScrollButton";
 import ScrollTextButton from "./general/ScrollTextButton";
 import GradientButton from "./general/GradientButton";
+import GradientCircleIcon from "./general/GradientCircleIcon";
 
 import data from "../data/db.json";
 import Calendar from "./Calendar";
 
 import tourshero from "../images/tours-hero.svg";
+import icon1 from "../images/tours-rafting.svg";
+import icon2 from "../images/tours-compare-heights.svg";
+import icon3 from "../images/tours-sand-timer.svg";
 
 function Tours() {
   const { pathname } = useLocation();
@@ -69,6 +73,12 @@ function Tours() {
         </div>
       ))}
 
+      {/* ############### Tour Details #################  */}
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-8">
+        <GradientCircleIcon icon={icon1} text1="Difficulty" text2="3/10" />
+        <GradientCircleIcon icon={icon2} text1="Age" text2="7-10 years" />
+        <GradientCircleIcon icon={icon3} text1="Duration" text2="4 hours" />        
+      </div>
 
       <ScrollTextButton />
     </div>
