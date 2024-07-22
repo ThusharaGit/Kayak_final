@@ -16,10 +16,10 @@ function Footer() {
         <div className="md:w-1/4 ">
           <h2 className="text-lg font-bold text-center py-4">SITE MAP</h2>
           <nav className="flex flex-col space-y-2 text-center ">
-            <a href="/" className="">Home</a>
-            <a href="/about" className="">About</a>
-            <a href="/tours" className="">Tours</a>
-            <a href="/faq" className="">FAQs</a>
+            <Link to="/" className="">Home</Link>
+            <Link to="/about" className="">About</Link>
+            <Link to="/tours" className="">Tours</Link>
+            <Link to="/faq" className="">FAQs</Link>
           </nav>
         </div>
         {/* box */}
