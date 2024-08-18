@@ -5,21 +5,21 @@
       "team_name": "Alexandru Ionescu",
       "team_title": "TOUR GUIDE",
       "team_desc": "Lorem ipsum 1 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ex ea commodo consequat.",
-      "team_URL": "images/team/about-team-person1.svg"
+      "team_URL": "images/team/about-team-person1.webp"
     },
     {
       "team_id": "1",
       "team_name": "Alexandru Ionescu",
       "team_title": "TOUR GUIDE",
       "team_desc": "Lorem ipsum 2 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ex ea commodo consequat.",
-      "team_URL": "images/team/about-team-person2.svg"
+      "team_URL": "images/team/about-team-person2.webp"
     },
     {
       "team_id": "2",
       "team_name": "Alexandru Ionescu",
       "team_title": "TOUR GUIDE",
       "team_desc": "Lorem ipsum 3 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ex ea commodo consequat.",
-      "team_URL": "images/team/about-team-person3.svg"
+      "team_URL": "images/team/about-team-person3.webp"
     }
   ],
   "trips_done": [

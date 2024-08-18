@@ -11,7 +11,7 @@ import MoreButton from "./general/MoreButton";
 import data from "../data/db.json";
 import Calendar from "./Calendar";
 
-import tourshero from "../images/tours-hero.svg";
+import tourshero from "../images/tours-hero.webp";
 import icon1 from "../images/tours-rafting.svg";
 import icon2 from "../images/tours-compare-heights.svg";
 import icon3 from "../images/tours-sand-timer.svg";

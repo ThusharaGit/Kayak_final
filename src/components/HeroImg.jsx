@@ -1,10 +1,10 @@
 // import React from 'react'
 
 import hero_banner from "../images/hero-banner.svg";
-import hero_image_m from "../images/hero-image-rounded.svg";
+import hero_image_m from "../images/hero-image-rounded.webp";
 // import hero_border from "../images/hero-border.svg";
 // import hero_image_l from "../images/hero-image.svg";
-import hero_image from "../images/hero-image-border.jpg";
+import hero_image from "../images/hero-image-border.webp";
 import empowering_youth from "../images/empowering_youth.svg";
 
 import GradientText from "./general/GradientText";
@@ -15,7 +15,7 @@ function HeroImg() {
     <>    
 
       {/* mobile view */}
-      <div className="sm:hidden relative w-full h-[700px] flex flex-col items-center justify-center">
+      <div className="sm:hidden relative w-full h-[800px] flex flex-col items-center justify-center">
         <img
           src={hero_banner}
           alt="Big SVG"

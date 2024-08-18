@@ -7,7 +7,7 @@ import ScrollButton from "./general/ScrollButton";
 import ScrollTextButton from "./general/ScrollTextButton";
 
 import contact_pic2 from "../images/contact_pic2.jpg";
-import contacthero from "../images/contact-hero.svg";
+import contacthero from "../images/contact-hero.webp";
 
 function Contact() {
   const { pathname } = useLocation();

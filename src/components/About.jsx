@@ -8,7 +8,7 @@ import GradientCircle from "./general/GradientCircle";
 
 import SliderTeam from "./SliderTeam";
 
-import abouthero from "../images/about-hero.svg";
+import abouthero from "../images/about-hero.webp";
 import aboutteam from "../images/about-team.svg";
 import aboutpokal from "../images/about-pokal.svg";
 import aboutpaddler from "../images/about-paddler.svg";

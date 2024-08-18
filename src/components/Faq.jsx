@@ -7,7 +7,7 @@ import ScrollTextButton from "./general/ScrollTextButton";
 import BlackButton from "./general/BlackButton";
 
 import data from "../data/db.json";
-import faqhero from "../images/faq-hero.svg";
+import faqhero from "../images/faq-hero.webp";
 
 function Faq() {
   const { pathname } = useLocation();
